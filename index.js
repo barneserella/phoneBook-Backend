@@ -67,7 +67,7 @@ app.post('/api/persons', (req, res) => {
     })
   }
 
-  if(!body.name || !body.number){
+  if(!body.name || !body.phoneNumber){
     return res.status(400).json({
         error: 'name or number missing'
     })
